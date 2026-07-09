@@ -1,0 +1,102 @@
+# Navigation
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: false
+
+menu:
+  Home: / || fas fa-home
+  Notes: /notes/ || fas fa-book
+  Archives: /archives/ || fas fa-archive
+
+# Social
+social:
+  fab fa-github: https://github.com/tomorin1214 || Github || '#24292e'
+
+# Avatar
+avatar:
+  img:
+  effect: false
+
+# Index page
+subtitle:
+  enable: true
+  effect: true
+  source: false
+  sub: 记录生活，分享想法
+
+index_layout: 3
+
+# Post meta
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+  post:
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+# Footer
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version: true
+
+# Aside
+aside:
+  enable: true
+  position: right
+  card_author:
+    enable: true
+    description: 喜欢写点东西
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/tomorin1214
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的小站
+  card_recent_post:
+    enable: true
+    limit: 5
+
+# Comment
+comments:
+  use:
+  - Valine
+  post: true
+  aside: true
+valine:
+  enable: false
+
+# More
+math:
+  enable: false
+  katex:
+    copy_tex: false
+search:
+  enable: true
+  path: search.xml
+  field: post
+  content: true
+darkmode:
+  enable: true
+  start_at:
+    time:
+    sunrise: 6
+    sunset: 18
+  transparency:
+readmode: true
+fontawesome: true
+rss: /atom.xml
