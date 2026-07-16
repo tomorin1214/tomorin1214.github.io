@@ -15,7 +15,7 @@ social:
 
 # ===== Avatar =====
 avatar:
-  img: /img/avatar.png
+  img: /img/avatar.png?v=2
   effect: false
 
 # ===== Images =====
