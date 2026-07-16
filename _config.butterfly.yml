@@ -26,6 +26,11 @@ index_img:
 archive_img:
 footer_img:
 
+# Website Background
+# Can set it to color, image URL or an array containing colors and/or image URLs
+# If an array is provided, a random background will be selected from the array on each load
+background: /img/bg.jpg
+
 cover:
   index_enable: false
   aside_enable: false
