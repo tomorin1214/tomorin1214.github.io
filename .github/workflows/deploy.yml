@@ -19,6 +19,7 @@ jobs:
 
       - run: npm install
 
+      - run: npx hexo clean
       - run: npx hexo generate
 
       - uses: peaceiris/actions-gh-pages@v3
