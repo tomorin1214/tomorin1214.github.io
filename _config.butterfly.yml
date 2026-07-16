@@ -293,3 +293,8 @@ inject:
         }
       </style>
   bottom:
+
+# APlayer + MetingJS (网易云音乐)
+aplayerInject:
+  enable: true
+  per_page: true
