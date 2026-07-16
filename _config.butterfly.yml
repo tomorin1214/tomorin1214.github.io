@@ -228,18 +228,22 @@ pjax:
 # ===== Inject =====
 inject:
   head:
-    # 右侧边栏高度透明 + 左侧文章区微透明
+    # 右侧边栏透明 + 文字阴影增强可读性 + 左侧文章区微透明
     - |
       <style>
-        /* 右侧边栏 - 高度透明 */
+        /* 右侧边栏 - 适中透明 */
         #aside-content .card-widget {
-          background: rgba(255, 255, 255, 0.22) !important;
+          background: rgba(255, 255, 255, 0.38) !important;
           backdrop-filter: blur(0px);
           -webkit-backdrop-filter: blur(0px);
         }
-        /* 移动端侧边栏 - 高度透明 */
+        /* 侧边栏文字 - 浅色阴影增强可读性 */
+        #aside-content {
+          text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+        }
+        /* 移动端侧边栏 - 适中透明 */
         #sidebar #sidebar-menus {
-          background: rgba(255, 255, 255, 0.22) !important;
+          background: rgba(255, 255, 255, 0.38) !important;
         }
         /* 左侧文章卡片 - 微透明 */
         #recent-posts .recent-post-item,
@@ -249,10 +253,13 @@ inject:
         }
         /* Dark mode */
         [data-theme='dark'] #aside-content .card-widget {
-          background: rgba(18, 18, 18, 0.22) !important;
+          background: rgba(18, 18, 18, 0.38) !important;
+        }
+        [data-theme='dark'] #aside-content {
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
         }
         [data-theme='dark'] #sidebar #sidebar-menus {
-          background: rgba(18, 18, 18, 0.22) !important;
+          background: rgba(18, 18, 18, 0.38) !important;
         }
         [data-theme='dark'] #recent-posts .recent-post-item,
         [data-theme='dark'] #article-container .shuoshuo-item,
