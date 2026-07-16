@@ -129,7 +129,7 @@ aside:
   position: right
   card_author:
     enable: true
-    description: 喜欢写点东西
+    description: 在夏日里生出的浮花的皎白、初更里的降雨
     button:
       enable: true
       icon: fab fa-github
