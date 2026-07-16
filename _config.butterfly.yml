@@ -175,10 +175,24 @@ share:
 
 # ===== Comments (需要你注册) =====
 comments:
-  use:
+  use: Giscus
   text: true
   lazyload: false
   count: false
+
+# Giscus
+# https://giscus.app/
+giscus:
+  repo: tomorin1214/tomorin1214.github.io
+  repo_id: R_kgDOTTKOmQ
+  category: Announcements
+  category_id: DIC_kwDOTTKOmc4DBUSR
+  mapping: pathname
+  reactions_enabled: true
+  input_position: bottom
+  lang: zh-CN
+  light_theme: light
+  dark_theme: dark
 
 # ===== Effects =====
 rounded_corners_ui: true
