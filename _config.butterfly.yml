@@ -293,6 +293,15 @@ inject:
         }
       </style>
   bottom:
+    # 修复 MetingJS 首次加载不初始化的问题
+    - |
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          setTimeout(() => {
+            if (typeof loadMeting === 'function') loadMeting()
+          }, 300)
+        })
+      </script>
 
 # APlayer + MetingJS (网易云音乐)
 aplayerInject:
