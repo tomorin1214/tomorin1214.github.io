@@ -1,34 +1,74 @@
-# Navigation
+# ===== Navigation =====
 nav:
-  logo:
   display_title: true
   display_post_title: true
   fixed: false
 
 menu:
   Home: / || fas fa-home
-  Notes: /notes/ || fas fa-book
   Archives: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
 
-# Social
 social:
   fab fa-github: https://github.com/tomorin1214 || Github || '#24292e'
 
-# Avatar
+# ===== Avatar =====
 avatar:
-  img:
-  effect: false
+  img: /img/avatar.png
+  effect: true
 
-# Index page
+# ===== Images =====
+favicon: /img/favicon.ico
+disable_top_img: true
+default_top_img:
+index_img:
+archive_img:
+footer_img:
+
+cover:
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
+  default_cover: []
+
+# ===== Theme Colors (Minimalist B&W) =====
+theme_color:
+  enable: true
+  main: "#555555"
+  paginator: "#333333"
+  button_hover: "#222222"
+  link_color: "#666666"
+  hr_color: "#dddddd"
+  code_foreground: "#333333"
+  code_background: "rgba(0, 0, 0, .04)"
+  toc_color: "#555555"
+  blockquote_padding_color: "#888888"
+  blockquote_background_color: "rgba(0, 0, 0, .03)"
+  scrollbar_color: "#999999"
+
+# ===== Code Blocks =====
+code_blocks:
+  theme: light
+  macStyle: false
+  height_limit: false
+  copy: true
+  language: true
+
+# ===== Subtitle (打字机效果) =====
 subtitle:
   enable: true
   effect: true
   source: false
-  sub: 记录生活，分享想法
+  sub:
+    - 记录生活，分享想法
+    - 一个安静的角落
+    - 写点东西，慢慢来
 
-index_layout: 3
+index_site_info_top:
+index_top_img_height:
 
-# Post meta
+# ===== Post =====
 post_meta:
   page:
     date_type: created
@@ -43,7 +83,29 @@ post_meta:
     tags: true
     label: true
 
-# Footer
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+reward:
+  enable: false
+
+related_post:
+  enable: true
+  limit: 6
+
+post_pagination: 1
+
+# ===== Footer =====
 footer:
   owner:
     enable: true
@@ -51,10 +113,14 @@ footer:
   copyright:
     enable: true
     version: true
+  custom_text: 记录生活 · 分享想法
 
-# Aside
+# ===== Sidebar =====
 aside:
   enable: true
+  hide: false
+  button: true
+  mobile: true
   position: right
   card_author:
     enable: true
@@ -66,37 +132,95 @@ aside:
       link: https://github.com/tomorin1214
   card_announcement:
     enable: true
-    content: 欢迎来到我的小站
+    content: 欢迎来到我的小站 🎉
   card_recent_post:
     enable: true
     limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 40
+  card_archives:
+    enable: true
+    type: monthly
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
 
-# Comment
+# ===== Search =====
+search:
+  use: local_search
+  placeholder: 搜索文章...
+  local_search:
+    preload: true
+    top_n_per_article: 1
+
+# ===== Share =====
+share:
+  use: sharejs
+  sharejs:
+    sites: facebook,twitter,wechat,weibo,qq
+
+# ===== Comments (需要你注册) =====
 comments:
   use:
-  - Valine
-  post: true
-  aside: true
-valine:
-  enable: false
+  text: true
+  lazyload: false
+  count: false
 
-# More
-math:
-  enable: false
-  katex:
-    copy_tex: false
-search:
-  enable: true
-  path: search.xml
-  field: post
-  content: true
+# ===== Effects =====
+rounded_corners_ui: true
+enter_transitions: true
+readmode: true
 darkmode:
   enable: true
-  start_at:
-    time:
-    sunrise: 6
-    sunset: 18
-  transparency:
-readmode: true
-fontawesome: true
+  button: true
+  autoChangeMode: 1
+
+canvas_nest:
+  enable: false
+
+click_heart:
+  enable: false
+
+fireworks:
+  enable: false
+
+activate_power_mode:
+  enable: false
+
+# ===== Misc =====
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
 rss: /atom.xml
+Open_Graph_meta:
+  enable: true
+fontawesome: true
+mask:
+  header: true
+  footer: true
+css_prefix: true
+display_mode: light
+snackbar:
+  enable: true
+  position: bottom-left
+instantpage: true
+lazyload:
+  enable: false
+pjax:
+  enable: true
+
+# ===== Inject =====
+inject:
+  head:
+  bottom:
