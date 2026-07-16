@@ -228,4 +228,36 @@ pjax:
 # ===== Inject =====
 inject:
   head:
+    # 右侧边栏高度透明 + 左侧文章区微透明
+    - |
+      <style>
+        /* 右侧边栏 - 高度透明 */
+        #aside-content .card-widget {
+          background: rgba(255, 255, 255, 0.22) !important;
+          backdrop-filter: blur(0px);
+          -webkit-backdrop-filter: blur(0px);
+        }
+        /* 移动端侧边栏 - 高度透明 */
+        #sidebar #sidebar-menus {
+          background: rgba(255, 255, 255, 0.22) !important;
+        }
+        /* 左侧文章卡片 - 微透明 */
+        #recent-posts .recent-post-item,
+        #article-container .shuoshuo-item,
+        .layout > div:first-child:not(.nc) {
+          background: rgba(255, 255, 255, 0.92) !important;
+        }
+        /* Dark mode */
+        [data-theme='dark'] #aside-content .card-widget {
+          background: rgba(18, 18, 18, 0.22) !important;
+        }
+        [data-theme='dark'] #sidebar #sidebar-menus {
+          background: rgba(18, 18, 18, 0.22) !important;
+        }
+        [data-theme='dark'] #recent-posts .recent-post-item,
+        [data-theme='dark'] #article-container .shuoshuo-item,
+        [data-theme='dark'] .layout > div:first-child:not(.nc) {
+          background: rgba(18, 18, 18, 0.92) !important;
+        }
+      </style>
   bottom:
