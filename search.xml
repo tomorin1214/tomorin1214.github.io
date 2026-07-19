@@ -4,33 +4,7 @@
   
     
     <entry>
-      <title>thinking-test</title>
-      <link href="/2026/07/17/thinking-test/"/>
-      <url>/2026/07/17/thinking-test/</url>
-      
-        <content type="html"><![CDATA[<h2 id="这是一篇练习文章"><a href="#这是一篇练习文章" class="headerlink" title="这是一篇练习文章"></a>这是一篇练习文章</h2><p>写点内容…</p><p>下面是图片练习区域：</p><img src="/2026/07/17/thinking-test/search-elquette.jpg" class="" title="爱尔奎特"><!-- 1. 把图片放进 source/_posts/thinking-test/ 文件夹 --><!-- 2. 然后用下面这行语法插入（替换文件名和描述） --><!--  -->]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐分享</title>
-      <link href="/2026/07/16/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/"/>
-      <url>/2026/07/16/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB/</url>
-      
-        <content type="html"><![CDATA[<p>写一些想说的话…</p><hr><!--   ===== 嵌入网易云音乐的方法 =====    从网易云音乐网页版打开歌曲/歌单页面，复制网址里的 ID：  歌曲示例：https://music.163.com/#/song?id=1863312160 → ID 就是 1863312160    然后把下面的 "你的歌曲ID" 替换成实际的 ID 即可--><!-- 单曲 --><div class="aplayer" data-server="netease" data-type="song" data-id="2689981077" data-theme="#C20C0C"></div><!-- 其他类型参考：  歌单：<div class="aplayer" data-server="netease" data-type="playlist" data-id="你的歌单ID"></div>  专辑：<div class="aplayer" data-server="netease" data-type="album" data-id="你的专辑ID"></div>  多首：data-id="ID1,ID2,ID3"-->]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>my blog</title>
+      <title>介绍</title>
       <link href="/2026/07/16/%E4%BB%8B%E7%BB%8D/"/>
       <url>/2026/07/16/%E4%BB%8B%E7%BB%8D/</url>
       
